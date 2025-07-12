@@ -4,10 +4,9 @@ Feature: Funcionalidad del modulo Buzz en OrangeHRM
   Para poder compartir fotos, videos, opiniones
   Y reaccionar a las demas publicaciones
 
-  Background:
-    Given el usuario esta autenticado correctamente en OrangeHRM
 
   Scenario: Publicar una nota de texto en el muro
+    Given el usuario esta autenticado correctamente en OrangeHRM
     When postea el mensaje 'Automatizando publicaciones con Screenplay'
     Then debería ver su nota publicada en la parte superior del muro
 
@@ -32,11 +31,3 @@ Feature: Funcionalidad del modulo Buzz en OrangeHRM
        # And escribe Excelente noticia, felicitaciones! en el campo de comentarios
         #And hace clic en el boton para publicar el comentario
         #Then el comentario deberia aparecer asociado a esa publicacion
-
-#    Scenario: Filtrar publicaciones con mas likes
- #       When selecciona la opcion Most Liked Posts
-  #      Then debería ver primero las publicaciones con mayor numero de Likes
-
-  #  Scenario: Filtrar publicaciones con mas comentarios
-   #     When selecciona la opcion Most Commented Posts
-    #    Then deberia ver primero las publicaciones con mayor cantidad de comentarios

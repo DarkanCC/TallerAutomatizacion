@@ -9,7 +9,9 @@ public class PostImage implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(PostImageInteraction.post());
+        actor.attemptsTo(
+                PostImageInteraction.withImage("src\\main\\java\\co\\edu\\udea\\buzz\\utils\\julio.jpeg")
+        );
     }
 
     public static PostImage postImage() {

@@ -4,10 +4,9 @@ Feature: Funcionalidad del modulo Buzz en OrangeHRM
   Para poder compartir fotos, videos, opiniones
   Y reaccionar a las demas publicaciones
 
-  Background:
-    Given el usuario esta autenticado correctamente en OrangeHRM
 
   Scenario: Publicar una nota de texto en el muro
+    Given el usuario esta autenticado correctamente en OrangeHRM
     When postea el mensaje 'Automatizando publicaciones con Screenplay'
     Then debería ver su nota publicada en la parte superior del muro
 
